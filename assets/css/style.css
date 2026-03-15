@@ -114,3 +114,42 @@ footer {
     text-align: center;
     color: #484f58;
 }
+
+/* Profile Image Styling */
+.profile-img-container {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes it a circle */
+    object-fit: cover; /* Prevents stretching */
+    border: 3px solid var(--accent-tech);
+    transition: border-color 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Dynamic border color change based on identity */
+body.founder-mode .profile-img {
+    border-color: var(--accent-founder);
+}
+
+/* Social Icons */
+.social-links {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links a {
+    color: var(--text-main);
+    font-size: 1.5rem;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}

@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         sectionFounder.classList.remove("active-section");
         sectionFounder.classList.add("hidden-section");
+
+        document.body.classList.remove("founder-mode");
     });
 
     btnFounder.addEventListener("click", () => {
@@ -25,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         sectionTech.classList.remove("active-section");
         sectionTech.classList.add("hidden-section");
+
+        document.body.classList.add("founder-mode");
     });
 
     // -----------------------------------------
